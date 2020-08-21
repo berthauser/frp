@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane prefHeight="640.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ar.frp.controller.MainApp">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu text="_Archivo">
+            <items>
+                  <MenuItem id="datosFacultadRegionalMenuItem" fx:id="mnmItmDatosFacultad" text="_Datos Facultad Regional" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem id="salirMenuItem" fx:id="mnmItmSalir" text="_Salir" />
+            </items>
+          </Menu>
+          <Menu text="_Factura">
+            <items>
+              <MenuItem id="crearFacturaMenuItem" fx:id="mnmItmCrearFactura" text="_Crear Factura" />
+                  <MenuItem id="buscarFacturaMenuItem" text="_Buscar Factura" />
+            </items>
+          </Menu>
+          <Menu text="_Pagos">
+            <items>
+              <MenuItem id="registrarPagosMenuItem" text="_Registrar Pagos" />
+                  <MenuItem id="buscarPagosMenuItem" text="_Buscar Pagos" />
+            </items>
+          </Menu>
+            <Menu text="_Terceros">
+              <items>
+                <MenuItem id="nuevoTerceroMenuItem" fx:id="mnmItmTerceros" text="_Actualización" />
+                  <MenuItem id="cuentaTerceroMenuItem" text="_Cuenta" />
+              </items>
+            </Menu>
+            <Menu text="_Mantenimiento">
+              <items>
+                <MenuItem id="backupBdMenuItem" text="_Backup de la BD" />
+                  <MenuItem id="restoreBdMenuItem" text="_Restaurar BD" />
+              </items>
+            </Menu>
+            <Menu text="A_yuda">
+              <items>
+                <MenuItem id="aboutMenuItem" text="_Acerca de ..." />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="930.0" spacing="5.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="650.0" top="5.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <Button fx:id="btnConectar" mnemonicParsing="false" prefWidth="82.0" style="-fx-background-color: #D4AC0D;" text="Conectar BD" />
+            <Button fx:id="btnDesconectar" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #D4AC0D;" text="Desconectar BD" />
+            <Button fx:id="btnSalir" mnemonicParsing="false" prefWidth="80.0" style="-fx-background-color: #3498DB;" text="Salir" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <ImageView fitHeight="427.0" fitWidth="392.0" pickOnBounds="true" preserveRatio="true" smooth="false" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../resources/images/Logo%20UTN%20Azul.jpg" />
+         </image>
+      </ImageView>
+   </center>
+</BorderPane>
