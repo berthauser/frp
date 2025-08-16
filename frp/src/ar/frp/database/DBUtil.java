@@ -10,39 +10,39 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 
 /*
- * Creado por bertHäuser - 17/10/2017
+ * Creado por bertHï¿½user - 17/10/2017
  * 
  */
 
 public class DBUtil {
-	// Conexión
+	// Conexiï¿½n
 	public static Connection conn = null;
-	// String de conexión
+	// String de conexiï¿½n
 	private static final String connStr = "jdbc:postgresql://192.168.0.10:5432/terceros";
 //	private static final String connStr = "jdbc:postgresql://localhost:5432/terceros";
 
 	// Conectar a la BD
 	public static void dbConnect() throws SQLException, ClassNotFoundException {
-		// Trato de establecer la Conexión a la BD
+		// Trato de establecer la Conexiï¿½n a la BD
 		try {
 			conn = DriverManager.getConnection(connStr, "postgres", "");
 			Alert alert = new Alert(AlertType.INFORMATION);
-			alert.setTitle("Información");
+			alert.setTitle("Informaciï¿½n");
 			alert.setHeaderText(null);
-			alert.setContentText("¡Conexión exitosa a la BD!");
+			alert.setContentText("ï¿½Conexiï¿½n exitosa a la BD!");
 			alert.showAndWait();
 		} catch (SQLException e) {
 			Alert alert2 = new Alert(AlertType.ERROR);
-			alert2.setTitle("Error de Conexión");
-			alert2.setHeaderText("¡No hay conexión a la BD!");
-			alert2.setContentText("Falló la Conexión" + e);
+			alert2.setTitle("Error de Conexiï¿½n");
+			alert2.setHeaderText("ï¿½No hay conexiï¿½n a la BD!");
+			alert2.setContentText("Fallï¿½ la Conexiï¿½n" + e);
 			e.printStackTrace();
 			alert2.showAndWait();
 			throw e;
 		}
 	}
 	
-	// Cerrar la Conexión a la BD
+	// Cerrar la Conexiï¿½n a la BD
 	public static void dbDisconnect() throws SQLException {
 		try {
 			if (conn != null && !conn.isClosed()) {
@@ -56,18 +56,18 @@ public class DBUtil {
 	// Operaciones DDL sobre la BD
 	@SuppressWarnings("null")
 	public static ResultSet dbExecuteQuery(String queryStmt) throws SQLException, ClassNotFoundException {
-		// Declaro null todos los argumentos del método
+		// Declaro null todos los argumentos del mï¿½todo
 		Statement stmt = null;
 		ResultSet resultSet = null;
 		try {
 			// Creo el objeto query
 			stmt = conn.createStatement();
-			// Ejecuto la operación query (SELECT)
+			// Ejecuto la operaciï¿½n query (SELECT)
 			resultSet = stmt.executeQuery(queryStmt);
 		} catch (SQLException e) {
 			Alert alert2 = new Alert(AlertType.ERROR);
 			alert2.setTitle("Error de SQL");
-			alert2.setContentText("Problema en la ejecución del Query" + e);
+			alert2.setContentText("Problema en la ejecuciï¿½n del Query" + e);
 			e.printStackTrace();
 			alert2.showAndWait();
 			throw e;
@@ -94,7 +94,7 @@ public class DBUtil {
 		} catch (SQLException e) {
 			Alert alert2 = new Alert(AlertType.ERROR);
 			alert2.setTitle("Error de SQL");
-			alert2.setContentText("Problema con operación de Update/Insert/Delete" + e);
+			alert2.setContentText("Problema con operaciï¿½n de Update/Insert/Delete" + e);
 			e.printStackTrace();
 			alert2.showAndWait();
 			throw e;

@@ -6,42 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Referenced Libraries"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX11"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/asm-7.2.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/barbecue-1.5-beta1.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/castor-core-1.4.1.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/castor-xml-1.4.1.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/cglib-3.3.0.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/commons-beanutils-1.9.4.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/commons-collections-3.2.2.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/commons-collections4-4.4.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/commons-digester-2.1.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/commons-digester3-3.2.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/commons-lang3-3.9.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/controlsfx-11.0.2.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/ecj-4.6.1.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/itextpdf-5.5.13.1.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/jasperreports-6.10.0.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/jasperreports-annotation-processors-6.10.0.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/jasperreports-chart-customizers-6.10.0.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/jasperreports-chart-themes-6.10.0.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/jasperreports-custom-visualization-6.10.0.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/jasperreports-fonts-6.10.0.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/jasperreports-functions-6.10.0.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/jasperreports-metadata-6.10.0.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/javax.inject-1.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/javax.persistence-2.2.2.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/jcommon-1.0.24.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/jfoenix-9.0.9.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/jfreechart-1.5.0.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/joda-time-2.9.9.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/junit-4.12.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/junit-jupiter-api-5.5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/postgresql-42.2.9.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/tools.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/TrayNotification.jar"/>
-	<classpathentry kind="lib" path="C:/Utilidades/Java/Referenced Libraries/validation-api-2.0.1.Final.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX15"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
